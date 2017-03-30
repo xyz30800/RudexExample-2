@@ -1,0 +1,28 @@
+A reducer is a function that returns a piece of the application state.
+
+Contianer:
+
+	A container is a react component that has a dirct connection to the state managed by redux.
+
+	A container is a component that has direct access to the state that's produced by redux.
+
+	In general we use the most parent component that care about a particular piece of state to be a container.
+
+	Only the most parent component that uses a particular piece of state needs to be connected to redux.
+
+{ Data container in the application } -> Redux
+ + 
+{ Views container in the application } -> React
+ = 
+{ Usable App } -> React - Redux
+
+Action creator:
+
+	When event is triggered, it's going to call an action creator.
+
+	A action creator is a function that returns an action. An Action is an object that flows thought all of different reducers inside of appliction. Reducer can use that action to produce a different value for its particular piece of state.  
+
+	Reducer can choose depending on the action to return a different piece of state depending on what action is.
+
+	
+
